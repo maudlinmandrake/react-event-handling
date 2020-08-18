@@ -7,11 +7,19 @@ function App() {
     setHeadingText("Submitted");
   }
 
+  function handleMouseOver() {}
+
   return (
     <div className="container">
       <h1>{headingText}</h1>
       <input type="text" placeholder="What's your name?" />
-      <button onClick={handleClick}>Submit</button>
+      <button
+        style={{ backgroundColor: "white" }}
+        onClick={handleClick}
+        onMouseOver={handleMouseOver}
+      >
+        Submit
+      </button>
     </div>
   );
 }
